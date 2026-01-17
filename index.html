@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <!-- Forces all relative URLs to resolve from /-->
+    <base href="/" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://turtlpass.com" />
+
+    <!-- Title and Description -->
+    <title>TurtlPass</title>
+    <meta name="description" content="Offline-first, open-source password management — secured by hardware, not the cloud. Stateless by design. Developed in Europe." />
+    <meta name="keywords" content="offline-first password manager, open-source password manager, hardware-secured password manager, stateless password manager, password manager without cloud, privacy-first password manager" />
+    <meta name="author" content="TurtlPass" />
+    <meta name="theme-color" content="#10B981" />
+    <meta name="robots" content="index, nofollow" /> <!-- index the page but not follow the links -->
+    <meta name="google" content="max-snippet:-1, max-image-preview:large" />
+    <meta name="google" content="noarchive" />
+    <meta name="google" content="notranslate" />
+
+    <!-- Open Graph (Facebook & LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://turtlpass.com" />
+    <meta property='og:email' content="hello@turtlpass.com">
+    <meta property="og:site_name" content="TurtlPass">
+    <meta property="og:title" content="TurtlPass – Your Passwords, Physically Secured." />
+    <meta property="og:description" content="Offline-first, open-source password management — secured by hardware, not the cloud. Stateless by design. Developed in Europe." />
+    <meta property="og:image" content="https://turtlpass.com/open-graph.jpg" /> <!-- 1200x630 -->
+    <meta property="og:locale" content="pt_PT">
+    <meta property='og:locality' content='Leiria'>
+    <meta property='og:country-name' content='Portugal'>
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://turtlpass.com" />
+    <meta name="twitter:title" content="TurtlPass – Your Passwords, Physically Secured." />
+    <meta name="twitter:description" content="Offline-first, open-source password management — secured by hardware, not the cloud. Stateless by design. Developed in Europe." />
+    <meta name="twitter:image" content="https://turtlpass.com/open-graph.jpg" />
+
+    <!-- Geographic meta tags-->
+    <meta name="geo.placename" content="Leiria, Portugal">
+    <meta name="geo.region" content="PT">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- Styles -->
+    <link type="text/css" rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data (JSON-LD for SEO) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "TurtlPass Device",
+        "url": "https://turtlpass.com",
+        "logo": "https://turtlpass.com/open-graph.jpg",
+        "image": "https://turtlpass.com/open-graph.jpg",
+        "description": "Offline-first, open-source password management — secured by hardware, not the cloud. Stateless by design. Developed in Europe.",
+        "provider": {
+            "@type": "Organization",
+            "name": "TurtlPass",
+            "url": "https://turtlpass.com",
+            "logo": "https://turtlpass.com/open-graph.jpg",
+            "email": "mailto:hello@turtlpass.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Leiria",
+                "addressRegion": "Leiria",
+                "addressCountry": "PT"
+            }
+        },
+        "brand": {
+            "@type": "Brand",
+            "name": "TurtlPass"
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://turtlpass.com/shop",
+            "priceCurrency": "EUR",
+            "price": "28.00",
+            "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "EUR",
+                "price": "28.00",
+                "name": "TurtlPass Device"
+            }
+        }
+    }
+    </script>
+
+    <!-- WebAssembly Entry Point -->
+    <script src="composeApp.js" type="application/javascript" defer></script>
+</head>
+<body>
+<input type="text" id="hiddenInput" style="position:absolute; left:-9999px;" />
+
+<!-- Empty body, WebAssembly will mount here -->
+<div id="root"></div>
+
+<noscript>
+    <p>Offline-first, open-source password management — secured by hardware, not the cloud. Stateless by design. Developed in Europe.</p>
+    <p>This website requires JavaScript to function correctly. Please enable JavaScript in your browser to continue.</p>
+</noscript>
+</body>
+</html>
