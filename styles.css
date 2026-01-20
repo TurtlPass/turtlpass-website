@@ -5,3 +5,7 @@ html, body {
     padding: 0;
     overflow: hidden;
 }
+nav {
+  position: absolute;
+  left: -9999px; /* keeps it off-screen for users but visible to crawlers */
+}

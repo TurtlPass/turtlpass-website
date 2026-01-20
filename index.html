@@ -16,10 +16,13 @@
     <meta name="keywords" content="offline-first password manager, open-source password manager, hardware-secured password manager, stateless password manager, password manager without cloud, privacy-first password manager" />
     <meta name="author" content="TurtlPass" />
     <meta name="theme-color" content="#3DDC84" />
-    <meta name="robots" content="index, nofollow" /> <!-- index the page but not follow the links -->
+    <meta name="robots" content="index, follow" /> <!-- index the page and follow the links -->
     <meta name="google" content="max-snippet:-1, max-image-preview:large" />
     <meta name="google" content="noarchive" />
     <meta name="google" content="notranslate" />
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
     <!-- Open Graph (Facebook & LinkedIn) -->
     <meta property="og:type" content="website" />
@@ -64,6 +67,10 @@
         "logo": "https://turtlpass.com/open-graph.jpg",
         "image": "https://turtlpass.com/open-graph.jpg",
         "description": "Offline-first, open-source password management — secured by hardware, not the cloud. Stateless by design. Developed in Europe.",
+        "sameAs": [
+            "https://github.com/TurtlPass",
+            "https://www.linkedin.com/company/turtlpass"
+        ],
         "provider": {
             "@type": "Organization",
             "name": "TurtlPass",
@@ -100,14 +107,25 @@
     <script src="composeApp.js" type="application/javascript" defer></script>
 </head>
 <body>
-<input type="text" id="hiddenInput" style="position:absolute; left:-9999px;" />
+    <!-- static nav for SEO / sitelinks -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/download">Download</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/docs">Documentation</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Empty body, WebAssembly will mount here -->
-<div id="root"></div>
+    <input type="text" id="hiddenInput" style="position:absolute; left:-9999px;" />
 
-<noscript>
-    <p>Offline-first, open-source password management — secured by hardware, not the cloud. Stateless by design. Developed in Europe.</p>
-    <p>This website requires JavaScript to function correctly. Please enable JavaScript in your browser to continue.</p>
-</noscript>
+    <!-- Empty body, WebAssembly will mount here -->
+    <div id="root"></div>
+
+    <noscript>
+        <p>Offline-first, open-source password management — secured by hardware, not the cloud. Stateless by design. Developed in Europe.</p>
+        <p>This website requires JavaScript to function correctly. Please enable JavaScript in your browser to continue.</p>
+    </noscript>
 </body>
 </html>
