@@ -120,12 +120,20 @@
 
     <input type="text" id="hiddenInput" style="position:absolute; left:-9999px;" />
 
+    <noscript>
+        <div style="position: fixed; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; background:#0B1D12; color:white; z-index:10000; padding:2rem; text-align:center; gap:1rem;">
+            <p>Offline-first, open-source password management — secured by hardware, not the cloud. Stateless by design. Developed in Europe.</p>
+            <p>This website requires JavaScript to function correctly. Please enable JavaScript in your browser to continue.</p>
+        </div>
+    </noscript>
+
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Warming up TurtlPass…</p>
+    </div>
+
     <!-- Empty body, WebAssembly will mount here -->
     <div id="root"></div>
 
-    <noscript>
-        <p>Offline-first, open-source password management — secured by hardware, not the cloud. Stateless by design. Developed in Europe.</p>
-        <p>This website requires JavaScript to function correctly. Please enable JavaScript in your browser to continue.</p>
-    </noscript>
 </body>
 </html>
